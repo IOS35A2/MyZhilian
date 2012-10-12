@@ -1,0 +1,280 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F1FC31516283A5C0071C90B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1FC31416283A5C0071C90B /* UIKit.framework */; };
+		0F1FC31716283A5C0071C90B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1FC31616283A5C0071C90B /* Foundation.framework */; };
+		0F1FC31916283A5C0071C90B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1FC31816283A5C0071C90B /* CoreGraphics.framework */; };
+		0F1FC31F16283A5C0071C90B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F1FC31D16283A5C0071C90B /* InfoPlist.strings */; };
+		0F1FC32116283A5C0071C90B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1FC32016283A5C0071C90B /* main.m */; };
+		0F1FC32516283A5C0071C90B /* sdsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1FC32416283A5C0071C90B /* sdsAppDelegate.m */; };
+		0F1FC32816283A5C0071C90B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F1FC32616283A5C0071C90B /* MainStoryboard.storyboard */; };
+		0F1FC32B16283A5C0071C90B /* sdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1FC32A16283A5C0071C90B /* sdsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F1FC31016283A5C0071C90B /* sigleVIew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sigleVIew.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F1FC31416283A5C0071C90B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0F1FC31616283A5C0071C90B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0F1FC31816283A5C0071C90B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0F1FC31C16283A5C0071C90B /* sigleVIew-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sigleVIew-Info.plist"; sourceTree = "<group>"; };
+		0F1FC31E16283A5C0071C90B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0F1FC32016283A5C0071C90B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0F1FC32216283A5C0071C90B /* sigleVIew-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sigleVIew-Prefix.pch"; sourceTree = "<group>"; };
+		0F1FC32316283A5C0071C90B /* sdsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sdsAppDelegate.h; sourceTree = "<group>"; };
+		0F1FC32416283A5C0071C90B /* sdsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sdsAppDelegate.m; sourceTree = "<group>"; };
+		0F1FC32716283A5C0071C90B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		0F1FC32916283A5C0071C90B /* sdsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sdsViewController.h; sourceTree = "<group>"; };
+		0F1FC32A16283A5C0071C90B /* sdsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sdsViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F1FC30D16283A5C0071C90B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F1FC31516283A5C0071C90B /* UIKit.framework in Frameworks */,
+				0F1FC31716283A5C0071C90B /* Foundation.framework in Frameworks */,
+				0F1FC31916283A5C0071C90B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F1FC30516283A5A0071C90B = {
+			isa = PBXGroup;
+			children = (
+				0F1FC31A16283A5C0071C90B /* sigleVIew */,
+				0F1FC31316283A5C0071C90B /* Frameworks */,
+				0F1FC31116283A5C0071C90B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F1FC31116283A5C0071C90B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F1FC31016283A5C0071C90B /* sigleVIew.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F1FC31316283A5C0071C90B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F1FC31416283A5C0071C90B /* UIKit.framework */,
+				0F1FC31616283A5C0071C90B /* Foundation.framework */,
+				0F1FC31816283A5C0071C90B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F1FC31A16283A5C0071C90B /* sigleVIew */ = {
+			isa = PBXGroup;
+			children = (
+				0F1FC32316283A5C0071C90B /* sdsAppDelegate.h */,
+				0F1FC32416283A5C0071C90B /* sdsAppDelegate.m */,
+				0F1FC32616283A5C0071C90B /* MainStoryboard.storyboard */,
+				0F1FC32916283A5C0071C90B /* sdsViewController.h */,
+				0F1FC32A16283A5C0071C90B /* sdsViewController.m */,
+				0F1FC31B16283A5C0071C90B /* Supporting Files */,
+			);
+			path = sigleVIew;
+			sourceTree = "<group>";
+		};
+		0F1FC31B16283A5C0071C90B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F1FC31C16283A5C0071C90B /* sigleVIew-Info.plist */,
+				0F1FC31D16283A5C0071C90B /* InfoPlist.strings */,
+				0F1FC32016283A5C0071C90B /* main.m */,
+				0F1FC32216283A5C0071C90B /* sigleVIew-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F1FC30F16283A5C0071C90B /* sigleVIew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F1FC32E16283A5C0071C90B /* Build configuration list for PBXNativeTarget "sigleVIew" */;
+			buildPhases = (
+				0F1FC30C16283A5C0071C90B /* Sources */,
+				0F1FC30D16283A5C0071C90B /* Frameworks */,
+				0F1FC30E16283A5C0071C90B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sigleVIew;
+			productName = sigleVIew;
+			productReference = 0F1FC31016283A5C0071C90B /* sigleVIew.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F1FC30716283A5A0071C90B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = davidsph;
+			};
+			buildConfigurationList = 0F1FC30A16283A5B0071C90B /* Build configuration list for PBXProject "sigleVIew" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F1FC30516283A5A0071C90B;
+			productRefGroup = 0F1FC31116283A5C0071C90B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F1FC30F16283A5C0071C90B /* sigleVIew */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F1FC30E16283A5C0071C90B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F1FC31F16283A5C0071C90B /* InfoPlist.strings in Resources */,
+				0F1FC32816283A5C0071C90B /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F1FC30C16283A5C0071C90B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F1FC32116283A5C0071C90B /* main.m in Sources */,
+				0F1FC32516283A5C0071C90B /* sdsAppDelegate.m in Sources */,
+				0F1FC32B16283A5C0071C90B /* sdsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0F1FC31D16283A5C0071C90B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F1FC31E16283A5C0071C90B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0F1FC32616283A5C0071C90B /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F1FC32716283A5C0071C90B /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0F1FC32C16283A5C0071C90B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0F1FC32D16283A5C0071C90B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F1FC32F16283A5C0071C90B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sigleVIew/sigleVIew-Prefix.pch";
+				INFOPLIST_FILE = "sigleVIew/sigleVIew-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0F1FC33016283A5C0071C90B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sigleVIew/sigleVIew-Prefix.pch";
+				INFOPLIST_FILE = "sigleVIew/sigleVIew-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F1FC30A16283A5B0071C90B /* Build configuration list for PBXProject "sigleVIew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F1FC32C16283A5C0071C90B /* Debug */,
+				0F1FC32D16283A5C0071C90B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F1FC32E16283A5C0071C90B /* Build configuration list for PBXNativeTarget "sigleVIew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F1FC32F16283A5C0071C90B /* Debug */,
+				0F1FC33016283A5C0071C90B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F1FC30716283A5A0071C90B /* Project object */;
+}
