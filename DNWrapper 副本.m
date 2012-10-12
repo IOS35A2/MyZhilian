@@ -4,6 +4,8 @@
 
 - (NSString *) getMD5String:(NSString *)url {
 	
+    
+    //方法尴尬个
 	NSDate *date = [NSDate date];
 	NSTimeInterval timeInterval = [date timeIntervalSince1970];
 	NSString *paramT = [NSString stringWithFormat:@"%f", timeInterval];
