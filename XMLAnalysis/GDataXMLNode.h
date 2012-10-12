@@ -88,6 +88,7 @@ enum {
   GDataXMLNotationDeclarationKind
 };
 
+// 注释
 typedef NSUInteger GDataXMLNodeKind;
 
 @interface GDataXMLNode : NSObject {
