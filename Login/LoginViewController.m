@@ -52,6 +52,8 @@
         NSArray *arr = [NSArray arrayWithContentsOfFile:[self filePath]];
         ac = [arr objectAtIndex:0];
         pw = [arr objectAtIndex:1];
+        account.text = ac;
+        passWord.text = pw;
     }
    
     account.delegate = self;
