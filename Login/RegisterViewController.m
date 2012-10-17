@@ -121,17 +121,7 @@
 {
  
     
-    //自定义navigationbar
-//    UINavigationBar *NavBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
-//    UIImage *img =[UIImage imageNamed:@"navigationbar_bg.png"];
-//    //[self SetNavBarBg:NavBar GetImg:img];
-//    [NavBar addSubview:[[UIImageView alloc]initWithImage:img]];
-//    UINavigationItem *NavTitle = [[UINavigationItem alloc] init];
-//    NavTitle.title = @"新用户注册";
-//    [NavBar pushNavigationItem:NavTitle animated:YES];
-//    [self.navigationController.navigationBar addSubview:NavBar];
-//    [NavTitle release];
-    
+       
     self.navigationItem.title = @"新用户注册";
     
     UIImageView *groupImv = [[UIImageView alloc] initWithFrame:CGRectMake(5, 10, 308, 211)];

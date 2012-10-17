@@ -27,6 +27,7 @@
     LoginViewController *logVC = [[LoginViewController alloc] init];
     logVC.tag = 1;
     UINavigationController *logInNV = [[UINavigationController alloc] initWithRootViewController:logVC];
+    [logInNV.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar_bg.png"] forBarMetrics:UIBarMetricsDefault];
     [logVC release];
     
     NSArray *controllers = [NSArray arrayWithObjects:logInNV, nil];
