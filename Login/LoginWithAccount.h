@@ -7,14 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-
+@protocol LoginWithAccountProtocol <NSObject>
+-(void)sentError:(NSString *)error;
+@end
 
 @interface LoginWithAccount : NSObject
 
 {
     NSString *result;//返回结果标志，0为错误
 }
-
+@property(nonatomic,retain)id<LoginWithAccountProtocol>delegate;
 //根据用户名和密码登录，获取到用户个人主页的相关信息
 - (void)LoginWithAccount:(NSString *)accout passWord:(NSString *)passWord;
 //文件路径

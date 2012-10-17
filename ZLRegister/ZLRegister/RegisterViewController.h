@@ -16,7 +16,8 @@
     UITextField *confirmTF;
     UIButton *doneInKeyboardButton;
     UIWindow *tempWindow;
-    UIAlertView *doneAlert;
+    
+
 }
 //@property(nonatomic,retain)NSString *resultStr;
 - (NSString *) getMD5String:(NSString *)url ;

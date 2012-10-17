@@ -1,0 +1,333 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F781C7E1628041900732B8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F781C7D1628041900732B8B /* UIKit.framework */; };
+		0F781C801628041900732B8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F781C7F1628041900732B8B /* Foundation.framework */; };
+		0F781C821628041900732B8B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F781C811628041900732B8B /* CoreGraphics.framework */; };
+		0F781C881628041900732B8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F781C861628041900732B8B /* InfoPlist.strings */; };
+		0F781C8A1628041900732B8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F781C891628041900732B8B /* main.m */; };
+		0F781C8E1628041900732B8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F781C8D1628041900732B8B /* AppDelegate.m */; };
+		0F781C961628044A00732B8B /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F781C951628044A00732B8B /* RegisterViewController.m */; };
+		0F781C991628051C00732B8B /* RegisterScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F781C981628051C00732B8B /* RegisterScrollView.m */; };
+		0F781C9E162805E800732B8B /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F781C9B162805E700732B8B /* RegexKitLite.m */; };
+		0F781C9F162805E800732B8B /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F781C9D162805E800732B8B /* GDataXMLNode.m */; };
+		0F781CA81628065800732B8B /* navigationbar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F781CA11628065800732B8B /* navigationbar_bg.png */; };
+		0F781CA91628065800732B8B /* registerBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F781CA21628065800732B8B /* registerBg.png */; };
+		0F781CAA1628065800732B8B /* centerBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F781CA31628065800732B8B /* centerBackground.png */; };
+		0F781CAB1628065800732B8B /* loginNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F781CA41628065800732B8B /* loginNormal.png */; };
+		0F781CAC1628065800732B8B /* registerNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F781CA51628065800732B8B /* registerNormal.png */; };
+		0F781CAD1628065800732B8B /* btn_done_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F781CA61628065800732B8B /* btn_done_down@2x.png */; };
+		0F781CAE1628065800732B8B /* btn_done_up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F781CA71628065800732B8B /* btn_done_up@2x.png */; };
+		0F781CB01628068B00732B8B /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F781CAF1628068B00732B8B /* libicucore.dylib */; };
+		0F781CB21628069D00732B8B /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F781CB11628069D00732B8B /* libxml2.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F781C791628041900732B8B /* ZLRegister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZLRegister.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F781C7D1628041900732B8B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0F781C7F1628041900732B8B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0F781C811628041900732B8B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0F781C851628041900732B8B /* ZLRegister-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZLRegister-Info.plist"; sourceTree = "<group>"; };
+		0F781C871628041900732B8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0F781C891628041900732B8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0F781C8B1628041900732B8B /* ZLRegister-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZLRegister-Prefix.pch"; sourceTree = "<group>"; };
+		0F781C8C1628041900732B8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0F781C8D1628041900732B8B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0F781C941628044A00732B8B /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		0F781C951628044A00732B8B /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		0F781C971628051C00732B8B /* RegisterScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterScrollView.h; sourceTree = "<group>"; };
+		0F781C981628051C00732B8B /* RegisterScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterScrollView.m; sourceTree = "<group>"; };
+		0F781C9A162805E700732B8B /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		0F781C9B162805E700732B8B /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		0F781C9C162805E700732B8B /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		0F781C9D162805E800732B8B /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		0F781CA11628065800732B8B /* navigationbar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationbar_bg.png; sourceTree = "<group>"; };
+		0F781CA21628065800732B8B /* registerBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = registerBg.png; sourceTree = "<group>"; };
+		0F781CA31628065800732B8B /* centerBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = centerBackground.png; sourceTree = "<group>"; };
+		0F781CA41628065800732B8B /* loginNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginNormal.png; sourceTree = "<group>"; };
+		0F781CA51628065800732B8B /* registerNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = registerNormal.png; sourceTree = "<group>"; };
+		0F781CA61628065800732B8B /* btn_done_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_done_down@2x.png"; sourceTree = "<group>"; };
+		0F781CA71628065800732B8B /* btn_done_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_done_up@2x.png"; sourceTree = "<group>"; };
+		0F781CAF1628068B00732B8B /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		0F781CB11628069D00732B8B /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F781C761628041900732B8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F781CB21628069D00732B8B /* libxml2.dylib in Frameworks */,
+				0F781CB01628068B00732B8B /* libicucore.dylib in Frameworks */,
+				0F781C7E1628041900732B8B /* UIKit.framework in Frameworks */,
+				0F781C801628041900732B8B /* Foundation.framework in Frameworks */,
+				0F781C821628041900732B8B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F781C6E1628041800732B8B = {
+			isa = PBXGroup;
+			children = (
+				0F781CB11628069D00732B8B /* libxml2.dylib */,
+				0F781CAF1628068B00732B8B /* libicucore.dylib */,
+				0F781C831628041900732B8B /* ZLRegister */,
+				0F781C7C1628041900732B8B /* Frameworks */,
+				0F781C7A1628041900732B8B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F781C7A1628041900732B8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F781C791628041900732B8B /* ZLRegister.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F781C7C1628041900732B8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F781C7D1628041900732B8B /* UIKit.framework */,
+				0F781C7F1628041900732B8B /* Foundation.framework */,
+				0F781C811628041900732B8B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F781C831628041900732B8B /* ZLRegister */ = {
+			isa = PBXGroup;
+			children = (
+				0F781C8C1628041900732B8B /* AppDelegate.h */,
+				0F781C8D1628041900732B8B /* AppDelegate.m */,
+				0F781CA01628064800732B8B /* image */,
+				0F781C841628041900732B8B /* Supporting Files */,
+				0F781C941628044A00732B8B /* RegisterViewController.h */,
+				0F781C951628044A00732B8B /* RegisterViewController.m */,
+				0F781C971628051C00732B8B /* RegisterScrollView.h */,
+				0F781C981628051C00732B8B /* RegisterScrollView.m */,
+				0F781C9A162805E700732B8B /* RegexKitLite.h */,
+				0F781C9B162805E700732B8B /* RegexKitLite.m */,
+				0F781C9C162805E700732B8B /* GDataXMLNode.h */,
+				0F781C9D162805E800732B8B /* GDataXMLNode.m */,
+			);
+			path = ZLRegister;
+			sourceTree = "<group>";
+		};
+		0F781C841628041900732B8B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F781C851628041900732B8B /* ZLRegister-Info.plist */,
+				0F781C861628041900732B8B /* InfoPlist.strings */,
+				0F781C891628041900732B8B /* main.m */,
+				0F781C8B1628041900732B8B /* ZLRegister-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F781CA01628064800732B8B /* image */ = {
+			isa = PBXGroup;
+			children = (
+				0F781CA11628065800732B8B /* navigationbar_bg.png */,
+				0F781CA21628065800732B8B /* registerBg.png */,
+				0F781CA31628065800732B8B /* centerBackground.png */,
+				0F781CA41628065800732B8B /* loginNormal.png */,
+				0F781CA51628065800732B8B /* registerNormal.png */,
+				0F781CA61628065800732B8B /* btn_done_down@2x.png */,
+				0F781CA71628065800732B8B /* btn_done_up@2x.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F781C781628041900732B8B /* ZLRegister */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F781C911628041900732B8B /* Build configuration list for PBXNativeTarget "ZLRegister" */;
+			buildPhases = (
+				0F781C751628041900732B8B /* Sources */,
+				0F781C761628041900732B8B /* Frameworks */,
+				0F781C771628041900732B8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZLRegister;
+			productName = ZLRegister;
+			productReference = 0F781C791628041900732B8B /* ZLRegister.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F781C701628041800732B8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 0F781C731628041800732B8B /* Build configuration list for PBXProject "ZLRegister" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F781C6E1628041800732B8B;
+			productRefGroup = 0F781C7A1628041900732B8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F781C781628041900732B8B /* ZLRegister */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F781C771628041900732B8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F781C881628041900732B8B /* InfoPlist.strings in Resources */,
+				0F781CA81628065800732B8B /* navigationbar_bg.png in Resources */,
+				0F781CA91628065800732B8B /* registerBg.png in Resources */,
+				0F781CAA1628065800732B8B /* centerBackground.png in Resources */,
+				0F781CAB1628065800732B8B /* loginNormal.png in Resources */,
+				0F781CAC1628065800732B8B /* registerNormal.png in Resources */,
+				0F781CAD1628065800732B8B /* btn_done_down@2x.png in Resources */,
+				0F781CAE1628065800732B8B /* btn_done_up@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F781C751628041900732B8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F781C8A1628041900732B8B /* main.m in Sources */,
+				0F781C8E1628041900732B8B /* AppDelegate.m in Sources */,
+				0F781C961628044A00732B8B /* RegisterViewController.m in Sources */,
+				0F781C991628051C00732B8B /* RegisterScrollView.m in Sources */,
+				0F781C9E162805E800732B8B /* RegexKitLite.m in Sources */,
+				0F781C9F162805E800732B8B /* GDataXMLNode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0F781C861628041900732B8B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F781C871628041900732B8B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0F781C8F1628041900732B8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0F781C901628041900732B8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F781C921628041900732B8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZLRegister/ZLRegister-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "ZLRegister/ZLRegister-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0F781C931628041900732B8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZLRegister/ZLRegister-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "ZLRegister/ZLRegister-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F781C731628041800732B8B /* Build configuration list for PBXProject "ZLRegister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F781C8F1628041900732B8B /* Debug */,
+				0F781C901628041900732B8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F781C911628041900732B8B /* Build configuration list for PBXNativeTarget "ZLRegister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F781C921628041900732B8B /* Debug */,
+				0F781C931628041900732B8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F781C701628041800732B8B /* Project object */;
+}

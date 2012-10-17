@@ -12,7 +12,8 @@
 
 @implementation FindPassWordViewController
 @synthesize emailTextField;
-
+@synthesize isSentPhoneButton;
+@synthesize isPhone = _isPhone;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,6 +37,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.isPhone = 0;//默认不发送到手机
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -43,6 +45,7 @@
 {
     [self setEmailTextField:nil];
     
+    [self setIsSentPhoneButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -57,10 +60,11 @@
 - (void)dealloc {
     [emailTextField release];
     
+    [isSentPhoneButton release];
     [super dealloc];
 }
 - (IBAction)sentAction:(id)sender {
-    NSString *urlstr1 = [NSString stringWithFormat:@"http://wapinterface.zhaopin.com/iphone/myzhaopin/loginmgr/forgetpwd.aspx?email=%@&uticket=xxxxxxxxxxxxxxxxxxxxx&needSendMobile=1",emailTextField.text];
+    NSString *urlstr1 = [NSString stringWithFormat:@"http://wapinterface.zhaopin.com/iphone/myzhaopin/loginmgr/forgetpwd.aspx?email=%@&uticket=xxxxxxxxxxxxxxxxxxxxx&needSendMobile=%@",emailTextField.text,_isPhone];
     NSString *urlstr2 = [DNWrapper getMD5String:urlstr1];
     NSLog(@"%@",urlstr2);
     
@@ -111,5 +115,16 @@
 }
 
 - (IBAction)sentPhone:(id)sender {
+    if (isSentPhoneButton.imageView.image == [UIImage imageNamed:@"unselect_icon@2x.png"]) {
+        NSLog(@"选择发送");
+        [isSentPhoneButton setImage:[UIImage imageNamed:@"select_icon@2x.png"] forState:UIControlStateNormal];
+        self.isPhone = [NSString stringWithFormat:@"%d",1];
+    }
+    else
+    {
+        NSLog(@"选择不发送");
+        [isSentPhoneButton setImage:[UIImage imageNamed:@"unselect_icon@2x.png"] forState:UIControlStateNormal];
+        self.isPhone = [NSString stringWithFormat:@"%d",0];
+    }
 }
 @end

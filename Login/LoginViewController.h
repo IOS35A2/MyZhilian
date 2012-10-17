@@ -14,15 +14,17 @@
 - (void)getResumeArray2:(NSMutableArray *)arr;
 @end
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : UIViewController<LoginWithAccountProtocol,UIAlertViewDelegate,UITextFieldDelegate>
 @property (retain, nonatomic) IBOutlet UITextField *account;//账户输入框
 @property (retain, nonatomic) IBOutlet UITextField *passWord;//密码输入眶
 @property (nonatomic,retain) NSMutableArray *resumeArr;//简历数组
 @property (nonatomic,assign)id<loginViewControllerProtocol>delegate;//传简历的代理
 @property (nonatomic,assign)int tag;//1我的智联用,2收藏职位用
+@property (retain, nonatomic) IBOutlet UIButton *loginButton;
+@property (retain, nonatomic) IBOutlet UIButton *registerButton;
 
 - (IBAction)Login:(id)sender;
-- (IBAction)findPassword:(id)sender;
+
 - (IBAction)register:(id)sender;
-- (NSString *)filePath
+- (NSString *)filePath;
 @end

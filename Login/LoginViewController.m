@@ -15,6 +15,8 @@
 #import "IsLogin.h"
 
 @implementation LoginViewController
+@synthesize loginButton = _loginButton;
+@synthesize registerButton = _registerButton;
 @synthesize account;
 @synthesize passWord;
 @synthesize resumeArr = _resumeArr;
@@ -51,6 +53,15 @@
         ac = [arr objectAtIndex:0];
         pw = [arr objectAtIndex:1];
     }
+   
+    account.delegate = self;
+    passWord.delegate = self;
+}
+//回收键盘
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
 }
 - (NSString *)filePath
 {
@@ -62,11 +73,29 @@
 }
 //到此结束
 
-
+//登陆失败，实现协议方法
+-(void)sentError:(NSString *)error
+{
+    NSLog(@"显示密码错误了啊啊啊啊啊啊");
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"登陆失败" message:error delegate:self cancelButtonTitle:@"确定" otherButtonTitles:@"找回密码", nil];
+    [self.view addSubview:alert];
+    [alert show];
+}
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1) {
+        NSLog(@"点击了找回密码");
+        FindPassWordViewController *findpwdVC = [[FindPassWordViewController alloc] init];
+        [self.navigationController pushViewController:findpwdVC animated:YES];
+        [findpwdVC release];
+    }
+}
 - (void)viewDidUnload
 {
     [self setAccount:nil];
     [self setPassWord:nil];
+    [self setLoginButton:nil];
+    [self setRegisterButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -81,8 +110,9 @@
 - (IBAction)Login:(id)sender {
     
     LoginWithAccount *loginAccount = [[LoginWithAccount alloc] init];
+    loginAccount.delegate = self;
     [loginAccount LoginWithAccount:account.text passWord:passWord.text];
-    
+    [loginAccount release];
     //isLogin单例
     IsLogin *islg = [IsLogin defaultIsLogin];
     
@@ -108,12 +138,6 @@
         }
     }
 }
-//点击找回密码
-- (IBAction)findPassword:(id)sender {
-    FindPassWordViewController *findpwdVC = [[FindPassWordViewController alloc] init];
-    [self.navigationController pushViewController:findpwdVC animated:YES];
-    [findpwdVC release];
-}
 
 - (IBAction)register:(id)sender {
     NSLog(@"注册");
@@ -125,6 +149,8 @@
 - (void)dealloc {
     [account release];
     [passWord release];
+    [_loginButton release];
+    [_registerButton release];
     [super dealloc];
 }
 @end

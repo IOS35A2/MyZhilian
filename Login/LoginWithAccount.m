@@ -14,12 +14,15 @@
 #import "IsLogin.h"
 
 @implementation LoginWithAccount
+@synthesize delegate = _delegate;
 
 - (void)LoginWithAccount:(NSString *)accout passWord:(NSString *)passWord
 {
     
     NSString *urlstr1 = [NSString stringWithFormat:@"http://wapinterface.zhaopin.com/iphone/myzhaopin/loginmgr/login.aspx?loginname=%@&password=%@",accout,passWord];
     NSString *urlstr2 = [DNWrapper getMD5String:urlstr1];
+    NSLog(@"登陆啊啊啊啊 %@",urlstr2);
+    NSLog(@"登陆：%@",urlstr2);
     NSURL *url = [NSURL URLWithString:urlstr2];
 
     //第二步，创建请求
@@ -99,7 +102,13 @@
     else
     {
         NSLog(@"有错误,登陆失败");
+        GDataXMLElement *error = [children objectAtIndex:1];
+        NSLog(@"error = %@",[error stringValue]);
         [islg setValue:NO utkt:nil rsmArray:nil nrdEmal:nil aplct:nil favct:nil jbsc:nil];
+        if (_delegate!=nil && [_delegate respondsToSelector:@selector(sentError:)]) {
+            NSLog(@"代理实现了吗？");
+            [_delegate sentError:[error stringValue]];
+        }
     }
        
 }

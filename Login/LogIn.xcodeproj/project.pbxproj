@@ -19,12 +19,9 @@
 		0F28F4CE162817B000BEEB89 /* navigationbar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F28F4C7162817B000BEEB89 /* navigationbar_bg.png */; };
 		0F28F4CF162817B000BEEB89 /* registerBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F28F4C8162817B000BEEB89 /* registerBg.png */; };
 		0F28F4D0162817B000BEEB89 /* registerNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F28F4C9162817B000BEEB89 /* registerNormal.png */; };
-		0F470CF61626953700B792DC /* TapShowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F470CF41626953700B792DC /* TapShowController.m */; };
-		0F470CF71626953700B792DC /* TapShowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F470CF51626953700B792DC /* TapShowController.xib */; };
 		0F470CFB16269A6600B792DC /* IsLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F470CFA16269A6600B792DC /* IsLogin.m */; };
 		0F8335C316281D5400274114 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8335BE16281D5400274114 /* RegexKitLite.m */; };
 		0F8335C416281D5400274114 /* RegisterScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8335C016281D5400274114 /* RegisterScrollView.m */; };
-		0F8335C516281D5400274114 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8335C216281D5400274114 /* RegisterViewController.m */; };
 		0F8335C816281E5300274114 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8335C716281E5300274114 /* libicucore.dylib */; };
 		0F924EDF1623AE8800C7FFEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F924EDE1623AE8700C7FFEB /* UIKit.framework */; };
 		0F924EE11623AE8800C7FFEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F924EE01623AE8800C7FFEB /* Foundation.framework */; };
@@ -133,9 +130,14 @@
 		0F97D0F21625A7CB007E3426 /* setting-form-back-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F97D0DF1625A7CB007E3426 /* setting-form-back-button@2x.png */; };
 		0F97D0F31625A7CB007E3426 /* toast_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F97D0E01625A7CB007E3426 /* toast_bg.png */; };
 		0F9F978A162B9B7A00AAA1B9 /* AutimaticLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9F9789162B9B7A00AAA1B9 /* AutimaticLogin.m */; };
+		0F9F97A0162C183F00AAA1B9 /* TapShowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9F979E162C183F00AAA1B9 /* TapShowController.m */; };
+		0F9F97A1162C183F00AAA1B9 /* TapShowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F9F979F162C183F00AAA1B9 /* TapShowController.xib */; };
 		0FA36C6E16264E4600A3A800 /* A2MyzlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA36C6C16264E4600A3A800 /* A2MyzlViewController.m */; };
 		0FA36C6F16264E4600A3A800 /* A2MyzlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FA36C6D16264E4600A3A800 /* A2MyzlViewController.xib */; };
 		0FA36C761626503F00A3A800 /* A2ResumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA36C751626503F00A3A800 /* A2ResumeView.m */; };
+		0FA6C152162D2C4C00F646BD /* CompanyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA6C151162D2C4C00F646BD /* CompanyCell.m */; };
+		0FA6C156162D407D00F646BD /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA6C155162D407D00F646BD /* Company.m */; };
+		0FAC0052162EA45A0009A587 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAC0051162EA45A0009A587 /* RegisterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -154,17 +156,12 @@
 		0F28F4C7162817B000BEEB89 /* navigationbar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationbar_bg.png; sourceTree = "<group>"; };
 		0F28F4C8162817B000BEEB89 /* registerBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = registerBg.png; sourceTree = "<group>"; };
 		0F28F4C9162817B000BEEB89 /* registerNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = registerNormal.png; sourceTree = "<group>"; };
-		0F470CF31626953700B792DC /* TapShowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapShowController.h; sourceTree = "<group>"; };
-		0F470CF41626953700B792DC /* TapShowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapShowController.m; sourceTree = "<group>"; };
-		0F470CF51626953700B792DC /* TapShowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TapShowController.xib; sourceTree = "<group>"; };
 		0F470CF916269A6600B792DC /* IsLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsLogin.h; sourceTree = "<group>"; };
 		0F470CFA16269A6600B792DC /* IsLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsLogin.m; sourceTree = "<group>"; };
 		0F8335BD16281D5400274114 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
 		0F8335BE16281D5400274114 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		0F8335BF16281D5400274114 /* RegisterScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterScrollView.h; sourceTree = "<group>"; };
 		0F8335C016281D5400274114 /* RegisterScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterScrollView.m; sourceTree = "<group>"; };
-		0F8335C116281D5400274114 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
-		0F8335C216281D5400274114 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		0F8335C716281E5300274114 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		0F924EDA1623AE8700C7FFEB /* LogIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F924EDE1623AE8700C7FFEB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -282,11 +279,20 @@
 		0F97D0E01625A7CB007E3426 /* toast_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toast_bg.png; sourceTree = "<group>"; };
 		0F9F9788162B9B7A00AAA1B9 /* AutimaticLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutimaticLogin.h; sourceTree = "<group>"; };
 		0F9F9789162B9B7A00AAA1B9 /* AutimaticLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutimaticLogin.m; sourceTree = "<group>"; };
+		0F9F979D162C183F00AAA1B9 /* TapShowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapShowController.h; sourceTree = "<group>"; };
+		0F9F979E162C183F00AAA1B9 /* TapShowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapShowController.m; sourceTree = "<group>"; };
+		0F9F979F162C183F00AAA1B9 /* TapShowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TapShowController.xib; sourceTree = "<group>"; };
 		0FA36C6B16264E4600A3A800 /* A2MyzlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A2MyzlViewController.h; sourceTree = "<group>"; };
 		0FA36C6C16264E4600A3A800 /* A2MyzlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A2MyzlViewController.m; sourceTree = "<group>"; };
 		0FA36C6D16264E4600A3A800 /* A2MyzlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = A2MyzlViewController.xib; sourceTree = "<group>"; };
 		0FA36C741626503F00A3A800 /* A2ResumeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A2ResumeView.h; sourceTree = "<group>"; };
 		0FA36C751626503F00A3A800 /* A2ResumeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A2ResumeView.m; sourceTree = "<group>"; };
+		0FA6C150162D2C4C00F646BD /* CompanyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyCell.h; sourceTree = "<group>"; };
+		0FA6C151162D2C4C00F646BD /* CompanyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyCell.m; sourceTree = "<group>"; };
+		0FA6C154162D407D00F646BD /* Company.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
+		0FA6C155162D407D00F646BD /* Company.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Company.m; sourceTree = "<group>"; };
+		0FAC0050162EA45A0009A587 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		0FAC0051162EA45A0009A587 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,8 +318,8 @@
 				0F8335BE16281D5400274114 /* RegexKitLite.m */,
 				0F8335BF16281D5400274114 /* RegisterScrollView.h */,
 				0F8335C016281D5400274114 /* RegisterScrollView.m */,
-				0F8335C116281D5400274114 /* RegisterViewController.h */,
-				0F8335C216281D5400274114 /* RegisterViewController.m */,
+				0FAC0050162EA45A0009A587 /* RegisterViewController.h */,
+				0FAC0051162EA45A0009A587 /* RegisterViewController.m */,
 			);
 			name = Register;
 			sourceTree = "<group>";
@@ -374,6 +380,10 @@
 				0F924EED1623AE8800C7FFEB /* AppDelegate.h */,
 				0F924EEE1623AE8800C7FFEB /* AppDelegate.m */,
 				0F924EE51623AE8800C7FFEB /* Supporting Files */,
+				0FA6C150162D2C4C00F646BD /* CompanyCell.h */,
+				0FA6C151162D2C4C00F646BD /* CompanyCell.m */,
+				0FA6C154162D407D00F646BD /* Company.h */,
+				0FA6C155162D407D00F646BD /* Company.m */,
 			);
 			path = LogIn;
 			sourceTree = "<group>";
@@ -403,9 +413,9 @@
 				0FA36C6B16264E4600A3A800 /* A2MyzlViewController.h */,
 				0FA36C6C16264E4600A3A800 /* A2MyzlViewController.m */,
 				0FA36C6D16264E4600A3A800 /* A2MyzlViewController.xib */,
-				0F470CF31626953700B792DC /* TapShowController.h */,
-				0F470CF41626953700B792DC /* TapShowController.m */,
-				0F470CF51626953700B792DC /* TapShowController.xib */,
+				0F9F979D162C183F00AAA1B9 /* TapShowController.h */,
+				0F9F979E162C183F00AAA1B9 /* TapShowController.m */,
+				0F9F979F162C183F00AAA1B9 /* TapShowController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -704,7 +714,6 @@
 				0F97D0F21625A7CB007E3426 /* setting-form-back-button@2x.png in Resources */,
 				0F97D0F31625A7CB007E3426 /* toast_bg.png in Resources */,
 				0FA36C6F16264E4600A3A800 /* A2MyzlViewController.xib in Resources */,
-				0F470CF71626953700B792DC /* TapShowController.xib in Resources */,
 				0F28F4CA162817B000BEEB89 /* btn_done_down@2x.png in Resources */,
 				0F28F4CB162817B000BEEB89 /* btn_done_up@2x.png in Resources */,
 				0F28F4CC162817B000BEEB89 /* centerBackground.png in Resources */,
@@ -712,6 +721,7 @@
 				0F28F4CE162817B000BEEB89 /* navigationbar_bg.png in Resources */,
 				0F28F4CF162817B000BEEB89 /* registerBg.png in Resources */,
 				0F28F4D0162817B000BEEB89 /* registerNormal.png in Resources */,
+				0F9F97A1162C183F00AAA1B9 /* TapShowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,12 +743,14 @@
 				0F97D02D16259183007E3426 /* ResumeViewCell.m in Sources */,
 				0FA36C6E16264E4600A3A800 /* A2MyzlViewController.m in Sources */,
 				0FA36C761626503F00A3A800 /* A2ResumeView.m in Sources */,
-				0F470CF61626953700B792DC /* TapShowController.m in Sources */,
 				0F470CFB16269A6600B792DC /* IsLogin.m in Sources */,
 				0F8335C316281D5400274114 /* RegexKitLite.m in Sources */,
 				0F8335C416281D5400274114 /* RegisterScrollView.m in Sources */,
-				0F8335C516281D5400274114 /* RegisterViewController.m in Sources */,
 				0F9F978A162B9B7A00AAA1B9 /* AutimaticLogin.m in Sources */,
+				0F9F97A0162C183F00AAA1B9 /* TapShowController.m in Sources */,
+				0FA6C152162D2C4C00F646BD /* CompanyCell.m in Sources */,
+				0FA6C156162D407D00F646BD /* Company.m in Sources */,
+				0FAC0052162EA45A0009A587 /* RegisterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

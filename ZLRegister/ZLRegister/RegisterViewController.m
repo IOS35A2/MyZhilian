@@ -13,13 +13,19 @@
 #import "RegisterScrollView.h"
 
 @implementation RegisterViewController
-
+//@synthesize resultStr;
 
 -(void)dealloc
 {
     
-    [[NSNotificationCenter defaultCenter] removeObserver:self]; 
+    [[NSNotificationCenter defaultCenter] removeObserver:self];  
+    doneInKeyboardButton = nil;
     
+//    resultStr = nil;
+    phoneTF = nil;
+    mailTF = nil;
+    passTF = nil;
+    confirmTF = nil;
     [super dealloc];
 }
 
@@ -147,7 +153,7 @@
     //设置提示文字
     [phoneTF setPlaceholder:@"请输入手机号"];
     [mailTF setPlaceholder:@"请输入邮箱"];
-    [passTF setPlaceholder:@"输入至少六位密码"];
+    [passTF setPlaceholder:@"输入密码"];
     [confirmTF setPlaceholder:@"再次输入密码"];
     //设置键盘样式
     phoneTF.keyboardType = UIKeyboardTypeNumberPad;
@@ -159,9 +165,6 @@
     passTF.returnKeyType = UIReturnKeyNext;
     confirmTF.returnKeyType = UIReturnKeyDone;
     
-    //设置clearBtn
-    phoneTF.clearButtonMode = UITextFieldViewModeWhileEditing;
-    mailTF.clearButtonMode = UITextFieldViewModeWhileEditing;
     //设置代理
     phoneTF.delegate =self;
     mailTF.delegate = self;
@@ -216,9 +219,9 @@
     if (mailTF.text==nil||phoneTF.text.length!=11||passTF.text.length<6||confirmTF.text.length<6) 
     {
         NSLog(@"请完整输入数据");
-        UIAlertView *judgeAlert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"请输入完整数据" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-        [judgeAlert show];
-        [judgeAlert release];
+        UIAlertView *alert2 = [[UIAlertView alloc]initWithTitle:@"提示" message:@"请输入完整数据" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alert2 show];
+        [alert2 release];
     }
     else{
         NSString *mail = [NSString stringWithFormat:mailTF.text];
@@ -230,18 +233,23 @@
         BOOL isEmail = [email isMatchedByRegex:@"\\b([a-zA-Z0-9%_.+\\-]+)@([a-zA-Z0-9.\\-]+?\\.[a-zA-Z]{2,6})\\b"];
         if (isEmail == NO)
         {
-            UIAlertView *mailAlert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"邮箱格式不正确" delegate:nil cancelButtonTitle:@"重新输入" otherButtonTitles:nil, nil];
-            [mailAlert show];
-            [mailAlert release];
+            UIAlertView *alert1 = [[UIAlertView alloc]initWithTitle:@"提示" message:@"邮箱格式不正确" delegate:nil cancelButtonTitle:@"重新输入" otherButtonTitles:nil, nil];
+            [alert1 show];
+            [alert1 release];
             
         }
         else
         {
+            
+            
+            
             if ([passWord isEqualToString:confirmWord]==NO)
             {
-                UIAlertView *passAlert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"确认密码错误" delegate:nil cancelButtonTitle:@"重新输入" otherButtonTitles:nil, nil];
-                [passAlert show];
-                [passAlert release];
+                UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"确认密码错误" delegate:nil cancelButtonTitle:@"重新输入" otherButtonTitles:nil, nil];
+                [alertView show];
+                [alertView release];
+                
+                
             }
             
             else
@@ -278,14 +286,17 @@
                     //邮箱注册失败
                     if ([resultStr isEqualToString:@"0"]==YES)
                     {
-                        UIAlertView *lastAlert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"邮箱已存在" delegate:self cancelButtonTitle:@"登录" otherButtonTitles:@"重新注册", nil];
-                        [lastAlert show];
+                        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"邮箱已存在" delegate:self cancelButtonTitle:@"登录" otherButtonTitles:@"忘记密码", @"重新注册",nil];
+                        [alert show];
                         
-                        [lastAlert release];
+                        [alert release];
                         
                     }
 
                 }
+                
+                
+                
             }
         }
     }
@@ -293,7 +304,7 @@
 }
 -(void)getBack
 {
-    [self.navigationController popViewControllerAnimated:YES];
+    NSLog(@"333333333");
 }
 
 //设置url方法
@@ -365,52 +376,60 @@
         NSString *email = [NSString stringWithFormat:textField.text];
         NSLog(@"email = %@",email);
         BOOL isEmail = [email isMatchedByRegex:@"\\b([a-zA-Z0-9%_.+\\-]+)@([a-zA-Z0-9.\\-]+?\\.[a-zA-Z]{2,6})\\b"];
-        if ( [mailTF.text isEqualToString:@""]==NO && isEmail == NO)
+        if (isEmail == NO)
         {
-            doneAlert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"邮箱格式错误" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-            [doneAlert show];
-            [doneAlert release];
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"邮箱格式错误" delegate:nil cancelButtonTitle:@"重新输入" otherButtonTitles:nil, nil];
+            [alert show];
+            [alert release];
             
         }
         
     }
-    else if(textField ==phoneTF )
+    else if(textField ==phoneTF)
     {
         NSString *phone = [NSString stringWithFormat:textField.text];
         NSLog(@"phone=%@",phone);
         NSLog(@"%d",phone.length);
-        if (phone.length != 11 && [phoneTF.text isEqualToString:@""]==NO ) 
+        if (phone.length != 11) 
         {
-            doneAlert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"手机格式不正确" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-            [doneAlert show];
-            [doneAlert release];
-
+            UIAlertView *alert3 = [[UIAlertView alloc]initWithTitle:@"提示" message:@"手机号不正确" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+            [alert3 show];
+            [alert3 release];
         }
         
     }
-    else if(textField == passTF  )
+    else if(textField == passTF)
     {
-        NSLog(@"pass =  %@",passTF.text);
-            if (textField.text.length<6 && passTF.text !=nil) {
+            if (textField.text.length<6) {
            
-            doneAlert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"输入至少六位密码" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-            [doneAlert show];
-            [doneAlert release];
+            UIAlertView *alert5 = [[UIAlertView alloc]initWithTitle:@"提示" message:@"输入至少六位密码" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+            [alert5 show];
+            [alert5 release];
         }
     }
     
-//   [self performSelector:@selector(performDismiss) withObject:nil afterDelay:1.0f];
+    
 }
 
-
 //alertView已经消失时执行的方法
+-(void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+//    resultStr = nil;
+}
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 { 
+    
+        
+    if (buttonIndex == 1)
+    {
+        NSLog(@"密码忘了怎么办");
+    }
     if (buttonIndex == 0)
     {
         NSLog(@"重新登录呗");
-        [self.navigationController popViewControllerAnimated:YES];
     }
+    
+    
 }
 
 
