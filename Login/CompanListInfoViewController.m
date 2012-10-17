@@ -35,9 +35,12 @@
 
 
 - (void) initCompanyData:(Resume *) resume{
-    
+    NSLog(@"function %s line=%d",__FUNCTION__,__LINE__);
     //得到公司列表 count作为tableview的行数
-    companyArray = [DealWithNetworkAndXMLHelper getCompanyList:resume];
+    
+    companyArray = [[DealWithNetworkAndXMLHelper getCompanyList:resume] retain];
+    
+    NSLog(@"传值过来的count =%d",[companyArray count]);
     
     
 }
@@ -107,7 +110,7 @@
 {
     
     // Return the number of rows in the section.
-    return 3;
+    return [companyArray count];
 }
 
 //改变按钮 背景图片
@@ -157,9 +160,15 @@
     cell.selectionStyle= UITableViewCellSelectionStyleGray;
     
 
+    LIistItemsForCompany *listCompanyItem =[companyArray objectAtIndex:indexPath.row];
+    
+    cell.companyName.text = listCompanyItem.companyName;
+    cell.companySize.text = listCompanyItem.companySize;
+    cell.companyLocation.text= listCompanyItem.company_location;
+    cell.date_show.text = listCompanyItem.date_show;
     
     
-    cell.companyName.text = @"henhao";
+    
     cell.selectedButtonState.tag=indexPath.row;
     [cell.selectedButtonState setBackgroundImage:[UIImage imageNamed:@"resume_unselected@2x.png"] forState:UIControlStateNormal];
     [cell.selectedButtonState addTarget:self action:@selector(bnClicked:) forControlEvents:UIControlEventTouchUpInside];

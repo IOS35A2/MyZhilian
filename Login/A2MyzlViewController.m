@@ -13,7 +13,7 @@
 #import "ResumeViewCell.h"
 #import "DNWrapper.h"
 #import "IsLogin.h"
-
+#import "CompanListInfoViewController.h"
 @implementation A2MyzlViewController
 @synthesize ResumeNameLabel;
 @synthesize ResumeScrollView;
@@ -124,11 +124,17 @@
 //点击浏览推出新窗口
 - (void)pushNewPage:(Resume *)resume
 {
-    TapShowController *tps = [[TapShowController alloc] init];
-    [self.navigationController pushViewController:tps animated:YES];
-    tps.showResume = resume;
+    //点击浏览简历 按钮 推出特定界面 展示公司列表
     
-    [tps release];
+    
+    CompanListInfoViewController *controller =[[CompanListInfoViewController alloc] init];
+    //属性传值
+    controller.resumeItemsOfCompany = resume;
+    
+    [self.navigationController pushViewController:controller animated:YES];
+    
+    
+    
 }
 //设置了默认属性后
 - (void)setDefaultResume:(NSString *)msg
