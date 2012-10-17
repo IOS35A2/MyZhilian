@@ -29,12 +29,14 @@
         
         [showButton setTitle:currentRsm.rsmShowCount forState:UIControlStateNormal];
         [showButton addTarget:self action:@selector(showButton) forControlEvents:UIControlEventTouchUpInside];
+        showButton.titleLabel.textColor = [UIColor blackColor];
         [self addSubview:showButton];
         
         self.image = [UIImage imageNamed:@"resume_page_bg@2x.png"];
         UILabel *showLabel = [[UILabel alloc] initWithFrame:CGRectMake(40, 40, 40, 15)];
         showLabel.text = @"浏览";
         showLabel.backgroundColor = [UIColor clearColor];
+        showLabel.textColor = [UIColor blackColor];
         [self addSubview:showLabel];
         [showLabel release];
         

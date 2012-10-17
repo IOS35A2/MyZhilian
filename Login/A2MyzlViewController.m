@@ -47,43 +47,48 @@
     [super viewDidLoad];
     //把返回按钮隐藏
     //self.navigationItem.backBarButtonItem ;
-    
-    self.rsmViewArray = [NSMutableArray arrayWithCapacity:[_rsmArray count]];
-    Resume *rsm = [_rsmArray objectAtIndex:0];
-    ResumeNameLabel.text = rsm.rsmName;
-    
-    self.ResumeScrollView.tag = 100;
-    self.ResumeScrollView.showsHorizontalScrollIndicator = NO;//隐藏指示器
-    int page = _rsmArray.count;
-    self.ResumeScrollView.frame = CGRectMake(0, 105, 320, 72);
-    ResumeScrollView.contentSize = CGSizeMake(320*page,72);
-    ResumeScrollView.delegate = self;
-    self.ResumeScrollView.pagingEnabled = YES;
-    
-    self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 130, 320, 30)];
-    _pageControl.numberOfPages = page;
-    _pageControl.currentPage = 0;
-    [_pageControl addTarget:self action:@selector(changePageCtrl:) forControlEvents:UIControlEventValueChanged];
-    [self.view addSubview:_pageControl];
-    
-    for (int i = 0; i<_rsmArray.count; i++) {
-        Resume *rsm = [_rsmArray objectAtIndex:i];
-        A2ResumeView *resumeView = [[A2ResumeView alloc] initWithFrame:CGRectMake(320*i+10, 0, 300, 70) resume:rsm];
-        resumeView.userInteractionEnabled = YES;//打开用户交互
-        resumeView.delegate = self;
-        resumeView.number = i;
-        if ([rsm.rsmLanguage isEqualToString:@"1"]) {
-            resumeView.isDefault = YES;
-            self.beforeDefaultNumber = i;
-        }else
-        {
-            resumeView.isDefault = NO;
+    if ([_rsmArray count]!= 0) {
+        
+        self.rsmViewArray = [NSMutableArray arrayWithCapacity:[_rsmArray count]];
+        Resume *rsm = [_rsmArray objectAtIndex:0];
+        ResumeNameLabel.text = rsm.rsmName;
+        
+        self.ResumeScrollView.tag = 100;
+        self.ResumeScrollView.showsHorizontalScrollIndicator = NO;//隐藏指示器
+        int page = _rsmArray.count;
+        self.ResumeScrollView.frame = CGRectMake(0, 105, 320, 72);
+        ResumeScrollView.contentSize = CGSizeMake(320*page,72);
+        ResumeScrollView.delegate = self;
+        self.ResumeScrollView.pagingEnabled = YES;
+        
+        self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 130, 320, 30)];
+        _pageControl.numberOfPages = page;
+        _pageControl.currentPage = 0;
+        [_pageControl addTarget:self action:@selector(changePageCtrl:) forControlEvents:UIControlEventValueChanged];
+        [self.view addSubview:_pageControl];
+        
+        for (int i = 0; i<_rsmArray.count; i++) {
+            Resume *rsm = [_rsmArray objectAtIndex:i];
+            A2ResumeView *resumeView = [[A2ResumeView alloc] initWithFrame:CGRectMake(320*i+10, 0, 300, 70) resume:rsm];
+            resumeView.userInteractionEnabled = YES;//打开用户交互
+            resumeView.delegate = self;
+            resumeView.number = i;
+            if ([rsm.rsmLanguage isEqualToString:@"1"]) {
+                resumeView.isDefault = YES;
+                self.beforeDefaultNumber = i;
+            }else
+            {
+                resumeView.isDefault = NO;
+            }
+            [self.ResumeScrollView addSubview:resumeView];
+            [self.rsmViewArray addObject:resumeView];
+            [resumeView release];
         }
-        [self.ResumeScrollView addSubview:resumeView];
-        [self.rsmViewArray addObject:resumeView];
-        [resumeView release];
     }
-    
+    else
+    {
+        
+    }
     //未读人事来信等列表
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(10, 160, 300, 180) style:UITableViewStyleGrouped];
     tableView.backgroundColor = [UIColor clearColor];
