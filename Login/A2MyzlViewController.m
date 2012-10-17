@@ -45,13 +45,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //把返回按钮隐藏
+    //self.navigationItem.backBarButtonItem ;
+    
     self.rsmViewArray = [NSMutableArray arrayWithCapacity:[_rsmArray count]];
     Resume *rsm = [_rsmArray objectAtIndex:0];
     ResumeNameLabel.text = rsm.rsmName;
     
     self.ResumeScrollView.tag = 100;
     self.ResumeScrollView.showsHorizontalScrollIndicator = NO;//隐藏指示器
-    
     int page = _rsmArray.count;
     self.ResumeScrollView.frame = CGRectMake(0, 105, 320, 72);
     ResumeScrollView.contentSize = CGSizeMake(320*page,72);
@@ -125,13 +127,6 @@
     TapShowController *tps = [[TapShowController alloc] init];
     [self.navigationController pushViewController:tps animated:YES];
     tps.showResume = resume;
-    
-    IsLogin *islg = [IsLogin defaultIsLogin];
-    NSLog(@"uticketValue = %@",islg.uticket);
-    NSString *urlstr1 = [NSString stringWithFormat:@"http://wapinterface.zhaopin.com/iphone/myzhaopin/getcompanylist_showresume.aspx?resume_id=%@&resume_number=%@&version_number=1&uticket=%@",tps.showResume.rsmID,tps.showResume.rsmNumber,islg.uticket];
-    NSString *urlstr2 = [DNWrapper getMD5String:urlstr1];
-    //NSURL *url = [NSURL URLWithString:urlstr2];
-    NSLog(@"简历公司：%@",urlstr2);
     
     [tps release];
 }
