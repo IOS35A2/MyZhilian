@@ -18,7 +18,8 @@
     UIWindow *tempWindow;
     UIAlertView *doneAlert;
 }
-//@property(nonatomic,retain)NSString *resultStr;
+@property(nonatomic,retain)NSArray *resumeArr;
+@property(nonatomic,assign)int tag;
 - (NSString *) getMD5String:(NSString *)url ;
 -(NSString *)md5:(NSString *)str;
 

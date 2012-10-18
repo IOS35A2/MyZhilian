@@ -11,9 +11,12 @@
 #import <CommonCrypto/CommonDigest.h>
 #import "RegexKitLite.h"
 #import "RegisterScrollView.h"
+#import "IsLogin.h"
+#import "LoginWithAccount.h"
+#import "A2MyzlViewController.h"
 
 @implementation RegisterViewController
-
+@synthesize resumeArr = _resumeArr,tag = _tag;
 
 -(void)dealloc
 {
@@ -119,11 +122,8 @@
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
 - (void)loadView
 {
- 
-    
-       
     self.navigationItem.title = @"新用户注册";
-    
+    self.tag = 1;
     UIImageView *groupImv = [[UIImageView alloc] initWithFrame:CGRectMake(5, 10, 308, 211)];
     [groupImv setImage:[UIImage imageNamed:@"registerBg.png"]];
     RegisterScrollView *SView = [[RegisterScrollView alloc]initWithFrame:CGRectMake(0, 0, 320, 416)];
@@ -201,9 +201,7 @@
     
     [self.view addSubview:registerBtn];
     [self.view addSubview:existBtn];
-    
-    
-    
+
     //注册通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleKeyboardDidShow:) name:UIKeyboardDidShowNotification object:nil];  
     
@@ -286,6 +284,38 @@
                         
                         [lastAlert release];
                         
+                    }
+                    else
+                    {
+                        NSLog(@"注册成功");
+                        LoginWithAccount *lgwc = [[LoginWithAccount alloc] init];
+                        [lgwc LoginWithAccount:mailTF.text passWord:passTF.text];
+                        
+                        IsLogin *islg = [IsLogin defaultIsLogin];
+                        NSLog(@"isLogin = %d",islg.isLogin);
+                        NSLog(@"self.tag = %d",self.tag);
+                        if (islg.isLogin == YES) {
+                            if (self.tag == 1) {//如果是从我的智联打开登陆界面
+                                NSLog(@"在登陆界面收到了成功的信息");
+                                //属性传值，把简历，未读人事信息等传过来
+                                self.resumeArr = [[NSMutableArray alloc] initWithCapacity:islg.resumeArray.count];
+                                self.resumeArr = islg.resumeArray;
+                                NSLog(@"传过来的简历有%d个",_resumeArr.count);
+                                
+                                //推出主界面
+                                A2MyzlViewController *a2myzlvc = [[A2MyzlViewController alloc] init];
+                                a2myzlvc.rsmArray = [[NSArray alloc] initWithArray:_resumeArr];
+                                a2myzlvc.someNumber = [NSArray arrayWithObjects:islg.noReadEmailNumber,islg.applyCount,islg.favCount,islg.jobSearchCount, nil];
+                                NSLog(@"推出主界面");
+                                [self.navigationController pushViewController:a2myzlvc animated:YES];
+                                [a2myzlvc release];
+                            }
+                            else
+                            {
+                                NSLog(@"登陆失败，不推出新界面，加个layer提示一下。");
+                            }
+
+                        }
                     }
 
                 }
