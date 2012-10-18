@@ -87,7 +87,23 @@
     }
     else
     {
-        
+        ResumeNameLabel.text = @"添加简历";
+        Resume *rsm =[[Resume alloc] init];
+        A2ResumeView *resumeView = [[A2ResumeView alloc] initWithFrame:CGRectMake(10, 0, 300, 70) resume:rsm];
+        resumeView.userInteractionEnabled = YES;//打开用户交互
+        resumeView.delegate = self;
+        resumeView.number = 0;
+        if ([rsm.rsmLanguage isEqualToString:@"1"]) {
+            resumeView.isDefault = YES;
+            self.beforeDefaultNumber = 0;
+        }else
+        {
+            resumeView.isDefault = NO;
+        }
+        [self.ResumeScrollView addSubview:resumeView];
+        [self.rsmViewArray addObject:resumeView];
+        [resumeView release];
+
     }
     //未读人事来信等列表
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(10, 160, 300, 180) style:UITableViewStyleGrouped];
