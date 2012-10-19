@@ -84,7 +84,6 @@
             currentResume.rsmLanguage = [languageValue stringValue];
             GDataXMLElement *showCountValue = [resumes objectAtIndex:5];
             currentResume.rsmShowCount = [showCountValue stringValue];
-            
             //放到数组里面
             [array addObject:currentResume];
         }
@@ -123,7 +122,5 @@
     NSString *path = [docPath stringByAppendingPathComponent:@"account"];
     return path;
 }
-
-
 
 @end
