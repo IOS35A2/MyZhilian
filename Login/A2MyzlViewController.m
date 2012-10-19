@@ -45,6 +45,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.title = @"我的智联";
+    [self.navigationItem setBackBarButtonItem:nil];
     //把返回按钮隐藏
     //self.navigationItem.backBarButtonItem ;
     if ([_rsmArray count]!= 0) {
@@ -237,7 +239,6 @@
 {
     return 40;
 }
-
 
 - (void)viewDidUnload
 {

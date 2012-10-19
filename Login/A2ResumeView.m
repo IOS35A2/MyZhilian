@@ -26,10 +26,10 @@
         
         UIButton *showButton = [UIButton buttonWithType:UIButtonTypeCustom];
         showButton.frame = CGRectMake(40, 10, 30, 30);
-        
+        [showButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [showButton setTitle:currentRsm.rsmShowCount forState:UIControlStateNormal];
         [showButton addTarget:self action:@selector(showButton) forControlEvents:UIControlEventTouchUpInside];
-        showButton.titleLabel.textColor = [UIColor blackColor];
+        //showButton.titleLabel.textColor = [UIColor blackColor];
         [self addSubview:showButton];
         
         self.image = [UIImage imageNamed:@"resume_page_bg@2x.png"];

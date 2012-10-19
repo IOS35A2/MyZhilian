@@ -44,6 +44,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.title = @"用户登陆";
     // Do any additional setup after loading the view from its nib.
     NSString *ac;
     NSString *pw;

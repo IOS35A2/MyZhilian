@@ -23,14 +23,14 @@
         _nameLabel.backgroundColor = [UIColor clearColor];
         [self addSubview:_nameLabel];
         self.countLabel = [[UILabel alloc] initWithFrame:CGRectMake(240, 8, 20, 30)];
-        //_countLabel.text = @"50";
+//        _countLabel.text = @"50";
 //        UIImage *img = [UIImage imageNamed:@"accessoryArrow@2x.png"];
 //        UIImageView *imgv = [[UIImageView alloc] initWithFrame:CGRectMake(30, 10, 20, 20)];
 //        imgv.image = img;
 //        _countLabel.backgroundColor = [UIColor clearColor];
 //        [_countLabel addSubview:imgv];
 //        [imgv release];
-        
+        _countLabel.backgroundColor = [UIColor clearColor];
         [self addSubview:_countLabel];
     }
     return self;

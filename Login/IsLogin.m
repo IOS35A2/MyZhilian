@@ -42,7 +42,7 @@
     static IsLogin *sl = nil;
     if (sl == nil) {
         sl = [[IsLogin alloc] init];
-        sl.isLogin = NO;
+        //sl.isLogin = NO;
     }
     return sl;
 }

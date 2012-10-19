@@ -375,6 +375,8 @@
 		0F9F978A162B9B7A00AAA1B9 /* AutimaticLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9F9789162B9B7A00AAA1B9 /* AutimaticLogin.m */; };
 		0F9F97A0162C183F00AAA1B9 /* TapShowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9F979E162C183F00AAA1B9 /* TapShowController.m */; };
 		0F9F97A1162C183F00AAA1B9 /* TapShowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F9F979F162C183F00AAA1B9 /* TapShowController.xib */; };
+		0FA2162E162FD535002F7FCB /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA2162C162FD535002F7FCB /* SearchViewController.m */; };
+		0FA2162F162FD535002F7FCB /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FA2162D162FD535002F7FCB /* SearchViewController.xib */; };
 		0FA36C6E16264E4600A3A800 /* A2MyzlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA36C6C16264E4600A3A800 /* A2MyzlViewController.m */; };
 		0FA36C6F16264E4600A3A800 /* A2MyzlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FA36C6D16264E4600A3A800 /* A2MyzlViewController.xib */; };
 		0FA36C761626503F00A3A800 /* A2ResumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA36C751626503F00A3A800 /* A2ResumeView.m */; };
@@ -786,6 +788,9 @@
 		0F9F979D162C183F00AAA1B9 /* TapShowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapShowController.h; sourceTree = "<group>"; };
 		0F9F979E162C183F00AAA1B9 /* TapShowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapShowController.m; sourceTree = "<group>"; };
 		0F9F979F162C183F00AAA1B9 /* TapShowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TapShowController.xib; sourceTree = "<group>"; };
+		0FA2162B162FD535002F7FCB /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		0FA2162C162FD535002F7FCB /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		0FA2162D162FD535002F7FCB /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		0FA36C6B16264E4600A3A800 /* A2MyzlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A2MyzlViewController.h; sourceTree = "<group>"; };
 		0FA36C6C16264E4600A3A800 /* A2MyzlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A2MyzlViewController.m; sourceTree = "<group>"; };
 		0FA36C6D16264E4600A3A800 /* A2MyzlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = A2MyzlViewController.xib; sourceTree = "<group>"; };
@@ -1305,6 +1310,9 @@
 				0F9F979D162C183F00AAA1B9 /* TapShowController.h */,
 				0F9F979E162C183F00AAA1B9 /* TapShowController.m */,
 				0F9F979F162C183F00AAA1B9 /* TapShowController.xib */,
+				0FA2162B162FD535002F7FCB /* SearchViewController.h */,
+				0FA2162C162FD535002F7FCB /* SearchViewController.m */,
+				0FA2162D162FD535002F7FCB /* SearchViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -1836,6 +1844,7 @@
 				0F21AA53162EB07700F0EBB7 /* searchsalary@2x.png in Resources */,
 				0F21AA54162EB07700F0EBB7 /* searchsalary_s.png in Resources */,
 				0F21AA55162EB07700F0EBB7 /* searchsalary_s@2x.png in Resources */,
+				0FA2162F162FD535002F7FCB /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1879,6 +1888,7 @@
 				0F21A7D9162EAFA400F0EBB7 /* ASIWebPageRequest.m in Sources */,
 				0F21A7DB162EAFA400F0EBB7 /* Reachability.m in Sources */,
 				0F21AA60162EB29200F0EBB7 /* DealWithNetworkAndXMLHelper.m in Sources */,
+				0FA2162E162FD535002F7FCB /* SearchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
